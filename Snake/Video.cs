@@ -15,7 +15,6 @@ namespace Snake
 
         public void Clear()
         {
-            Console.Clear();
             for(int i = 0; i < 28*80; i++)
             {
                 buffer[i] = ' ';
@@ -30,6 +29,7 @@ namespace Snake
         public void DrawAll()
         {
             string str = new string(buffer);
+            Console.SetCursorPosition(0, 0);
             Console.Write(str);
         }
 

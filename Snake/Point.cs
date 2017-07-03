@@ -29,8 +29,8 @@ namespace Snake
 
             int index = randomGenerator.Next(0, points.Count);
 
-            this.x = points[index].x;
-            this.y = points[index].y;
+            x = points[index].x;
+            y = points[index].y;
         }
 
         private Random randomGenerator;
